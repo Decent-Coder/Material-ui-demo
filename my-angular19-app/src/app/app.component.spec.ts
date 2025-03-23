@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'dashboard_layout_app' title`, () => {
+  it(`should have the 'my-angular19-app' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dashboard_layout_app');
+    expect(app.title).toEqual('my-angular19-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, dashboard_layout_app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, my-angular19-app');
   });
 });
